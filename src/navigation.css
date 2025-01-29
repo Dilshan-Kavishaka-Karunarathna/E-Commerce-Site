@@ -15,8 +15,8 @@
 }
 
 .brandName{
-    color: rgb(255, 38, 0);
-    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
     font-size: 1.87rem;
 }
 
@@ -24,7 +24,7 @@
 .cartGroup{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     font-size:18px;
 }
 
@@ -32,6 +32,12 @@
     display: flex;
     align-items: center;
     position: relative;
-    gap: 1rem;
+    gap:1rem;
+}
+
+.cartIcon{
+    display: flex; /* Align items in a row */
+    align-items: center; /* Vertically align items */
+    gap: 8px; /* Add a consistent gap between the icon and the text */
 }
 

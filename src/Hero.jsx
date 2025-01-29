@@ -1,7 +1,7 @@
 import './Hero.css'
 
 
-function Hello(){
+function Hero(){
 
     
 

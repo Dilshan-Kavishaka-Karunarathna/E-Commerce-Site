@@ -6,11 +6,13 @@ import './App.css'
 
 
 function App() {
+  const name= "Dilshan"
+  const cartCount = 4;
   return(
 
     <div>
-      <Navigation/>
-      <Hello/>
+      <Navigation name={name} cartCount={cartCount}/>
+      <Hero/>
    
 
       

@@ -1,7 +1,11 @@
+import { ShoppingCart } from 'lucide-react'
 import './navigation.css'
 
-function Navigation(){
+function Navigation(props){
+
     return(
+       
+
 
         <nav className="navigationContiner">
             <div className="navigationGroup">
@@ -15,14 +19,15 @@ function Navigation(){
             
             <div className="cartGroup">
                 <a href="/cart" className="cart">
-                    <p className='cartCount'>0</p>
+                    <p className='cartCount'>{props.cartCount}</p>
                     <div className='cartIcon'>
+                        <ShoppingCart/>
                         Cart
                     </div>
                     </a>
 
            
-                <p className="name">HI Dilshan</p>
+                <p className="name">HI {props.name}</p>
             </div>
             
 
