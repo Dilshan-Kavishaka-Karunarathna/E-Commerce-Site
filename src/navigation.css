@@ -1,0 +1,37 @@
+.navigationContiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+   
+}
+
+.navigationGroup{
+    display: flex;
+    column-gap: 4rem;
+   
+}
+
+.brandName{
+    color: rgb(0, 255, 38);
+    font-weight: 600;
+    font-size: 1.87rem;
+}
+
+.navLinks,
+.cartGroup{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size:18px;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+}
+

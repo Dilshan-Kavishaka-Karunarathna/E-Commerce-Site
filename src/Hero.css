@@ -1,0 +1,78 @@
+.badge{
+    color: black;
+    border-radius: 10px;
+    background-color:goldenrod;
+    padding:5px;
+
+}
+
+.shop-btn{
+    color:white;
+    border-color: black;
+    background: black;
+
+}
+.image{
+   height: 100%;
+   width:100%; 
+   object-fit: cover;
+}
+
+.hero-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    min-height: 60vh;
+}
+
+.hero-content{
+    display: felx;
+    flex-direction: column;
+    padding: 4rem;
+    justify-content: center;
+    gap:1rem;
+}
+
+.hero-section{
+    padding: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.image-container{
+    position:relative;
+
+}
+
+a {
+    font-weight: 500;
+    color: #00010b;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #535bf2;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+  
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
