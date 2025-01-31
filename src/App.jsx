@@ -1,4 +1,4 @@
-import Hello from './Hero';
+import Hero from './Hero';
 import Navigation from './navigation'; 
 import './App.css'
 
