@@ -19,16 +19,22 @@ function Navigation(props){
             
             <div className="flex items-center gap-8 text-black">
                 <a href="/cart" className="flex items-center gap-4 text-xl relative">
-                    <p className='cartCount'>{props.cartCount}</p>
+                    <p className='cartCount'>{props.cartCount||0}</p>
                     <div className='flex items-center gap-2 text-xl'>
                         <ShoppingCart/>
                         Cart
                     </div>
                     </a>
 
-           
-                <p className="text-xl">HI {props.name}</p>
+                {props.name?
+                  (<p className="text-xl">HI {props.name}</p>)
+                  : (
+                  <div className="flex gap-4">
+                  <a href="/sign" className="text-xl">Sign</a>
+                  <a href="/signup" className="text-xl">Sign up</a>
+                  </div>)}
             </div>
+            
             
 
         </nav>
