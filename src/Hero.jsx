@@ -15,7 +15,7 @@ function Hero(){
                         from experimental cadaver testing data
                          and two dummy crash tests lacks gen
                          eralizability to real world, </p>
-                    <button className="text-white bg-black w-40 rounded-md text-xl font-bold-400 p-2 w-fit">SHOP NOW</button>
+                    <button className="text-white bg-black w[40]rounded-md text-xl font-bold-400 p-2 w-fit">SHOP NOW</button>
                 </div>
                 <div className='relative'>
                     <img src='https://fee-storefront.vercel.app/assets/hero/hero.jpg'
