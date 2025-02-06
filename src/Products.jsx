@@ -1,5 +1,9 @@
 
 import ProductCards from "./ProductCards";
+import { Separator } from "@/components/ui/separator"
+import Tab from "./Tab";
+import { useState } from "react";
+
 
 function Products() {
     const products = [
@@ -77,10 +81,44 @@ function Products() {
       },
     ];
 
+    const categories = [
+      { _id: "ALL", name: "All" },
+      { _id: "1", name: "Headphones" },
+      { _id: "2", name: "Earbuds" },
+      { _id: "3", name: "Speakers" },
+      { _id: "4", name: "Mobile Phones" },
+      { _id: "5", name: "Smart Watches" },
+    ];
+
+    const[selectedCategoryId, SetSelectedCategoryId] = useState("3");
+    
+    const fileteredProducts = selectedCategoryId === "ALL"
+        ? products
+      : products.filter((product) => product.categoryId === selectedCategoryId);
+
+    const handleTabClick = (_id) => {
+      SetSelectedCategoryId(_id);
+    }
+
+
+
     return(
       <section className="py-8 px-8">
         <h2 className="text-4xl font-bold mb-4">Our Top Products</h2>
-        <ProductCards products={products}/>
+        <Separator className="mt-2" />
+        <div className="flex items-center mt-4 gap-4">
+          {categories.map((category) => (
+            <Tab 
+            key={category._id} 
+            _id={category._id}
+            selectedCategoryId={selectedCategoryId}
+            name= {category.name} 
+            onTabClick={handleTabClick}
+            />)
+          )}
+        </div>
+
+        <ProductCards products={fileteredProducts}/>
 
       
 

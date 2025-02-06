@@ -1,7 +1,7 @@
 import ProductCard from './ProductCard';
 function ProductCards(props){
     return(
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-4 gap-5 p-4">
             {props.products.map((product) => (
                 <ProductCard 
                 key={product._id} 
