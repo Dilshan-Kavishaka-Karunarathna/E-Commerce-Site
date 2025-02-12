@@ -1,3 +1,5 @@
+
+
 function Tab(props)
 
 {
@@ -14,11 +16,14 @@ function Tab(props)
          );
     }
 
-    return (
-       <button className="border border-white px-2 py-1 mx-4 rounded-sm text-zinc-950 font-semibold" onClick={handleClick}>
-        {props.name}
-       </button>
+     return (
+         <button className="border border-white px-2 py-1 mx-4 rounded-sm text-zinc-950 font-semibold" onClick={handleClick}>
+          {props.name}
+          
+         </button>
     );
+
+
 }
 
 export default Tab;
