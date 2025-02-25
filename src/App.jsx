@@ -1,14 +1,7 @@
 import Hero from './Hero';
 import Navigation from './navigation'; 
-import './App.css'
 import Products from './products';
 import Price from './PriceOrder';
-
-
-
-
-
-
 
 
 
